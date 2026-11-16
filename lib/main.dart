@@ -3,18 +3,17 @@ import 'package:my_pokemon_app/src/pokemon.dart';
 
 void main() {
   // runApp(const MyApp());
-  print("contoh print sesuatu");
   runApp(const MyAppNew());
 }
 
 class MyAppNew extends StatelessWidget {
-  const MyAppNew({super.key}); 
+  const MyAppNew({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "My Flutter",
-      theme: ThemeData( 
+      theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
@@ -36,7 +35,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-      
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -107,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times: '),
+            const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
